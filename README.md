@@ -142,7 +142,7 @@ The following publications document core components, design principles, and expe
 - **Nikolaos Papadakis, Niemat Khoder, Daphne Tuncer, Kostas Magoutis, Georgios Bouloukakis.**  
   *Adaptive and Interoperable Federated Data Spaces: An Implementation Experience.*  
   *20th International Conference on Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2025)*, Ottawa, Canada.  
-  ⟨hal-04936323⟩
+  [hal-04936323](https://hal.science/hal-04936323v1/)
 
 - **Alessandro Palma, Nikolaos Papadakis, Georgios Bouloukakis, Joaquin Garcia-Alfaro, Mattia Sospetti, Kostas Magoutis.**  
   *SHIELD: Assessing Security-by-Design in Federated Data Spaces Using Attack Graphs.*  
