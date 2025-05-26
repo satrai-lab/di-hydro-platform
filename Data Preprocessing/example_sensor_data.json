@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-05-26T14:00:00Z",
+  "device_id": "MPG-6099-001",
+  "readings": {
+    "pH": 7.2,
+    "turbidity": 3.9,
+    "conductivity": 750,
+    "DO": 5.4
+  }
+}

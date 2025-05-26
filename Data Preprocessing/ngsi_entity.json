@@ -1,0 +1,37 @@
+{
+  "id": "urn:ngsi-ld:Observation:MPG-6099-001:2025-05-26T14:00:00Z",
+  "type": "Observation",
+  "dateObserved": {
+    "type": "Property",
+    "value": "2025-05-26T14:00:00Z"
+  },
+  "deviceId": {
+    "type": "Property",
+    "value": "MPG-6099-001"
+  },
+  "measurement": {
+    "type": "Property",
+    "value": {
+      "pH": {
+        "value": 7.2,
+        "unit": "pH"
+      },
+      "turbidity": {
+        "value": 3.9,
+        "unit": "NTU"
+      },
+      "conductivity": {
+        "value": 750,
+        "unit": "µS/cm"
+      },
+      "DO": {
+        "value": 5.4,
+        "unit": "mg/L"
+      }
+    }
+  },
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://raw.githubusercontent.com/satrai-lab/di-hydro-data-models/main/context.jsonld"
+  ]
+}

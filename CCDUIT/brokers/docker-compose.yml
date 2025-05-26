@@ -1,0 +1,59 @@
+version: "3.8"
+networks:
+  mqtt-network:
+services:
+  # Orion is the context broker
+  Federation1-orion:
+    image: fiware/orion-ld
+    hostname: Federation1-orion
+    container_name: Federation1-fiware-orion
+    depends_on:
+      - Federation1-mongo-db
+    expose:
+      - "2378"
+    ports:
+      - "1028:1026" 
+    command: -dbhost Federation1-mongo-db -logLevel DEBUG
+    healthcheck:
+      test: curl --fail -s http://Federation1-orion:1026/version || exit 1
+    networks:
+      - mqtt-network
+
+  # Databases
+  Federation1-mongo-db:
+    image: mongo:3.6
+    hostname: Federation1-mongo-db
+    container_name: Federation1-mongo-db
+    expose:
+      - "27041"
+    ports:
+      - "27018:27017" 
+    command: --nojournal
+    volumes:
+      - mongo-db:/data
+    networks:
+      - mqtt-network
+
+  Federation1-Synchroniser:
+    image: eclipse-mosquitto:latest
+    container_name: Federation1-Synchroniser
+    ports:
+      - "1884:1883" #default mqtt port
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+    networks:
+      - mqtt-network
+    restart: unless-stopped
+
+# volumes for mapping data, config, and logs
+volumes:
+  mongo-db:
+  config:
+  data:
+  log:
+
+
+
+
+
