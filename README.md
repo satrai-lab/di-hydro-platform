@@ -48,7 +48,7 @@ The Di-Hydro data management stack is composed of six interoperating layers:
 Each top-level folder represents a logical component of the architecture. All components include detailed setup instructions and test scripts.
 
 ```
-/Preprocessing/
+/Data Preprocessing/
 │   Sensor-specific signal cleaning and formatting
 │   + iot_agents/ - NGSI-LD adapters for structured data
 │
