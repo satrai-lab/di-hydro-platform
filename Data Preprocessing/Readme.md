@@ -4,13 +4,13 @@
 
 This directory documents the data acquisition, preprocessing, and semantic transformation workflows implemented across multiple sensor categories within the Di-Hydro project. These processes represent the initial stages of the Di-Hydro data lifecycle, converting raw sensor signals into semantically enriched NGSI-LD entities that are ready for secure exchange, storage, and downstream analytics within the platform.
 
-The workflows described here support a wide range of hydropower plant (HPP) instrumentation, including structural health monitoring, condition monitoring, underwater imaging, water quality sensing, and biosensing. Due to the sensitive or partner-specific nature of some source code and hardware integration details, not all preprocessing pipelines are included here. However, this directory provides:
+The workflows described here support a wide range of hydropower plant (HPP) instrumentation, including structural health monitoring, condition monitoring, underwater imaging, water quality sensing, and biosensing. Due to the sensitive or partner-specific nature of some source code and hardware integration details, not all code for the preprocessing pipelines is included here. However, this directory provides:
 
-- A detailed overview of each processing pipeline as documented in Deliverable D2.2
+- A overview of each processing pipeline as documented in Deliverable D2.2
 - An illustrative IoT Agent example that transforms structured sensor output (JSON) into NGSI-LD
 - Reference to the Di-Hydro semantic data models repository
 
-**For a complete description of the approaches implemented, including the rationale and partner-specific sensor workflows, please refer to Deliverable D2.2 – Section 4.**
+**For a complete description of the approaches implemented, including the rationale and specific sensor workflows, please refer to Deliverable D2.2 – Section 4.**
 
 ## Supported Sensor Categories
 
