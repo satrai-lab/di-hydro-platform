@@ -1592,7 +1592,7 @@ def main(argv):
             print("Failed to connect to the broker. Exiting...")
             return
         client.on_message=on_message; 
-        with open(file) as jf: json_list=json.lo+ad(jf)
+        with open(file) as jf: json_list=json.load(jf)
         for data in json_list: post_entity(data,my_area,broker,port,qos,my_loc,1,client,username=username,password=password)
 
     else:
